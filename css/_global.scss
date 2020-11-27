@@ -1,0 +1,55 @@
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    h1{
+        font-size: 40px;
+        font-weight: 500;
+        color:gray;
+    }
+    .box{
+        width: 200px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 5px solid gray;
+        box-shadow: 5px 2px 5px 4px gray;
+        img{
+            
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 300;
+            color:rgb(50, 37, 165);
+
+        }
+        span{
+            &:nth-of-type(1){
+                text-transform: uppercase;
+                color: lightseagreen;
+                margin-bottom: 10px;
+            }
+            color: gray;
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .btn{
+            margin-bottom: 20px;
+            
+        }
+    }
+}
